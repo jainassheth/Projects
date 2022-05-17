@@ -1,0 +1,181 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family: monospace;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.button{
+    text-decoration: none;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-top:20px;
+}
+
+#showcase{
+    color:aliceblue;
+    background-image: url('../img/Falls.jpg');
+    background-size: cover;
+    background-position: center;
+    height:100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+    padding: 0 20px;
+}
+
+#showcase h1{
+    font-size: 50px;
+    line-height: 1.2;
+}
+
+#showcase p{
+    font-size: 20px;
+}
+
+#showcase .button{
+    font-size: 25px;
+    color:aliceblue;
+    border: aliceblue 1px solid;
+    box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+    display: inline-block;
+    position: relative;
+}
+
+#showcase .button:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;  
+    top: 10px;
+    right: -20px;
+    transition: 0.5s;
+}
+  
+#showcase .button:hover{
+    background-color: aliceblue;
+    color: brown;
+    padding-right: 30px;
+    padding-left:10px;
+}
+  
+#showcase .button:hover:after {
+    opacity: 1;
+    right: 10px;
+}
+
+.sections{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 15px 0;
+    padding: 50px;
+    text-align: center;
+    background-color: whitesmoke;
+}
+
+.sections h1{
+    font-size: 30px;
+    line-height: 1.2;
+    padding:10px 0;
+}
+
+.sections p{
+    font-size: 18px;
+    padding:10px 0;
+}
+
+.sections div{
+    margin: 20px;
+    padding:10px 0;
+}
+
+#section-a{
+    color:#525294;
+}
+
+#section-a .button{
+    font-size: 18px;
+    color:#525294;
+    border: #525294 1px solid;
+    text-decoration: none;
+    transition:0.5s;
+}
+
+#section-a .button:hover {
+    letter-spacing: 2.5px;
+    background-color: #A1A5CA;
+    color: aliceblue;
+}
+
+#section-b{
+    color:brown;
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 15px 0;
+    padding: 50px;
+}
+
+#section-b h1{
+    font-size: 30px;
+    line-height: 1.2;
+    padding:10px 0;
+}
+
+#section-b .imgcards{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#section-b .card{
+    border: brown 1px solid;
+    height: 20em;
+    width: 15em;
+    margin: 1em 2em;
+}
+
+#section-b img{
+    height:80%;
+    width:100%;
+}
+
+#section-c{
+    color:brown;
+}
+
+#section-c .button{
+    font-size: 18px;
+    color:brown;
+    border: brown 1px solid;
+    text-decoration: none;
+    transition:0.5s;
+}
+
+#section-c .button:hover {
+    letter-spacing: 2.5px;
+    background-color: #CB9195;
+    color: aliceblue;
+}
+
+#footer div{
+    background-color: darkslategray;
+    color:whitesmoke;
+    display:flex;
+    justify-content: space-between;
+    padding:10px 30px;
+}
+
+
+
